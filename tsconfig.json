@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Cible ES6 pour le JS généré
+    "module": "ESNext", // Utiliser les modules ES6
+    "strict": true, // Activer les vérifications strictes
+    "esModuleInterop": true, // Assurer la compatibilité avec les modules ES
+    "skipLibCheck": true, // Ignorer la vérification des types des modules
+    "forceConsistentCasingInFileNames": true, // Assurer la cohérence des noms de fichiers
+    "outDir": "./dist", // Spécifier le répertoire de sortie pour les fichiers compilés
+    "moduleResolution": "node", // Utiliser la résolution de module Node.js
+    "types": ["node"] // Inclure les types Node.js
+  },
+  "include": ["src/**/*.ts"] // Inclure tous les fichiers TypeScript dans src/
+}
