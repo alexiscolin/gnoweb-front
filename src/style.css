@@ -45,7 +45,7 @@
 
 @layer base {
   html {
-    @apply font-interNormal text-gray-600 bg-gray-50 text-200;
+    @apply font-interNormal text-gray-600 bg-white-50 text-200;
     font-feature-settings: "kern" on, "liga" on, "calt" on, "zero" on;
     -webkit-font-feature-settings: "kern" on, "liga" on, "calt" on, "zero" on;
     text-size-adjust: 100%;
@@ -54,6 +54,7 @@
     font-variant-ligatures: contextual common-ligatures;
     font-kerning: normal;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
   }
 
   @supports (font-variation-settings: normal) {
@@ -68,6 +69,10 @@
 
   svg {
     @apply max-w-full max-h-full;
+  }
+
+  form {
+    @apply my-0;
   }
 
   .realm-content {
@@ -266,15 +271,48 @@
 }
 
 @layer components {
-  .toc {
-    @apply col-span-1;
+  /* header */
+  .sidemenu .peer:checked + label > svg {
+    @apply text-green-600;
   }
 
-  .toc + .realm-content {
-    @apply col-span-3;
+  /* table of content */
+  #sidebar {
+    @apply col-span-3 order-2;
   }
-
-  .realm-content {
+  #sidebar + .realm-content,
+  #sidebar + .code-content {
+    @apply col-span-7;
+  }
+  .realm-content,
+  .code-content {
     @apply col-span-4;
+  }
+
+  /* sidebar */
+  .main-header:has(#sidemenu-summary:checked) + main #sidebar #sidebar-summary,
+  .main-header:has(#sidemenu-source:checked) + main #sidebar #sidebar-source,
+  .main-header:has(#sidemenu-docs:checked) + main #sidebar #sidebar-docs,
+  .main-header:has(#sidemenu-meta:checked) + main #sidebar #sidebar-meta {
+    @apply block;
+  }
+
+  :is(.main-header:has(#sidemenu-source:checked), .main-header:has(#sidemenu-docs:checked), .main-header:has(#sidemenu-meta:checked)) + main .realm-content,
+  :is(.main-header:has(#sidemenu-source:checked), .main-header:has(#sidemenu-docs:checked), .main-header:has(#sidemenu-meta:checked)) .main-navigation {
+    @apply col-span-6;
+  }
+  :is(.main-header:has(#sidemenu-source:checked), .main-header:has(#sidemenu-docs:checked), .main-header:has(#sidemenu-meta:checked)) + main #sidebar,
+  :is(.main-header:has(#sidemenu-source:checked), .main-header:has(#sidemenu-docs:checked), .main-header:has(#sidemenu-meta:checked)) .sidemenu {
+    @apply col-span-4;
+  }
+  :is(.main-header:has(#sidemenu-source:checked), .main-header:has(#sidemenu-docs:checked), .main-header:has(#sidemenu-meta:checked)) + main #sidebar::before {
+    @apply absolute block content-[''] top-0 w-[50vw] h-full -left-7 bg-gray-100 z-min;
+  }
+}
+
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: currentColor;
+    -webkit-text-stroke-width: 0.6px;
   }
 }

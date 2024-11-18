@@ -13,6 +13,10 @@ export default <Config>{
       lg: `${pxToRem(820)}rem`,
       xl: `${pxToRem(1020)}rem`,
       xxl: `${pxToRem(1366)}rem`,
+      max: `${pxToRem(1580)}rem`,
+    },
+    borderRadius: {
+      DEFAULT: `${pxToRem(6)}rem`,
     },
     zIndex: {
       min: "-1",
@@ -26,8 +30,11 @@ export default <Config>{
       padding: `${pxToRem(40)}rem`,
     },
     colors: {
+      white: {
+        50: "#FFFFFF",
+      },
       gray: {
-        50: "#FFFFFF", // Background color
+        50: "#F0F0F0", // Background color
         100: "#E2E2E2", // Title dark color
         200: "#BDBDBD", // Content dark color
         300: "#8F8F8F", // Muted color
