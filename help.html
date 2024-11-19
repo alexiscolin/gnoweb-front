@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[DYNAMIC + default]</title>
+
+    <!-- Meta description -->
+    <meta name="description" content="[DYNAMIC + default]" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="[DYNAMIC + default]" />
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="[DYNAMIC + default]" />
+    <meta property="og:description" content="[DYNAMIC + default]" />
+    <meta property="og:image" content="[DYNAMIC + default]" />
+    <meta property="og:url" content="[DYNAMIC + default]" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="[DYNAMIC + default]" />
+    <meta name="twitter:description" content="[DYNAMIC + default]" />
+    <meta name="twitter:image" content="[DYNAMIC + default]" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!-- Robots meta tag -->
+    <meta name="robots" content="index, follow" />
+  </head>
+
+  <body class="min-h-screen flex flex-col">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="ico-search" viewBox="0 0 14 14">
+        <path
+          d="M12.8224 13.0005L9.4137 9.53585M9.4137 9.53585C10.3363 8.59814 10.8546 7.32632 10.8546 6.00019C10.8546 4.67406 10.3363 3.40224 9.4137 2.46452C8.49112 1.5268 7.23983 1 5.9351 1C4.63038 1 3.37909 1.5268 2.45651 2.46452C1.53393 3.40224 1.01562 4.67406 1.01562 6.00019C1.01563 7.32632 1.53393 8.59814 2.45651 9.53585C3.37909 10.4736 4.63038 11.0004 5.9351 11.0004C7.23983 11.0004 8.49112 10.4736 9.4137 9.53585Z"
+          stroke="currentColor"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="ico-cross" viewBox="0 0 12 12">
+        <path d="M2 10L10 2M2 2L10 10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="ico-apps" viewBox="0 0 19 19">
+        <path
+          d="M1 3.25C1 2.65326 1.23705 2.08097 1.65901 1.65901C2.08097 1.23705 2.65326 1 3.25 1H5.5C6.09674 1 6.66903 1.23705 7.09099 1.65901C7.51295 2.08097 7.75 2.65326 7.75 3.25V5.5C7.75 6.09674 7.51295 6.66903 7.09099 7.09099C6.66903 7.51295 6.09674 7.75 5.5 7.75H3.25C2.65326 7.75 2.08097 7.51295 1.65901 7.09099C1.23705 6.66903 1 6.09674 1 5.5V3.25ZM1 13C1 12.4033 1.23705 11.831 1.65901 11.409C2.08097 10.9871 2.65326 10.75 3.25 10.75H5.5C6.09674 10.75 6.66903 10.9871 7.09099 11.409C7.51295 11.831 7.75 12.4033 7.75 13V15.25C7.75 15.8467 7.51295 16.419 7.09099 16.841C6.66903 17.2629 6.09674 17.5 5.5 17.5H3.25C2.65326 17.5 2.08097 17.2629 1.65901 16.841C1.23705 16.419 1 15.8467 1 15.25V13ZM10.75 3.25C10.75 2.65326 10.9871 2.08097 11.409 1.65901C11.831 1.23705 12.4033 1 13 1H15.25C15.8467 1 16.419 1.23705 16.841 1.65901C17.2629 2.08097 17.5 2.65326 17.5 3.25V5.5C17.5 6.09674 17.2629 6.66903 16.841 7.09099C16.419 7.51295 15.8467 7.75 15.25 7.75H13C12.4033 7.75 11.831 7.51295 11.409 7.09099C10.9871 6.66903 10.75 6.09674 10.75 5.5V3.25ZM10.75 13C10.75 12.4033 10.9871 11.831 11.409 11.409C11.831 10.9871 12.4033 10.75 13 10.75H15.25C15.8467 10.75 16.419 10.9871 16.841 11.409C17.2629 11.831 17.5 12.4033 17.5 13V15.25C17.5 15.8467 17.2629 16.419 16.841 16.841C16.419 17.2629 15.8467 17.5 15.25 17.5H13C12.4033 17.5 11.831 17.2629 11.409 16.841C10.9871 16.419 10.75 15.8467 10.75 15.25V13Z"
+          stroke="currentColor"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="ico-docs" viewBox="0 0 15 15">
+        <path
+          d="M7 3.6954C6.03844 2.83286 4.79173 2.35662 3.5 2.3584C2.88633 2.3584 2.29717 2.4634 1.75 2.65707V10.9696C2.31211 10.7712 2.90393 10.6702 3.5 10.6709C4.84458 10.6709 6.07133 11.1767 7 12.0079M7 3.6954C7.96153 2.83281 9.20826 2.35656 10.5 2.3584C11.1137 2.3584 11.7028 2.4634 12.25 2.65707V10.9696C11.6879 10.7712 11.0961 10.6702 10.5 10.6709C9.20827 10.6691 7.96156 11.1454 7 12.0079M7 3.6954V12.0079"
+          stroke="currentColor"
+          fill="transparent"
+          stroke-width="1.3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="ico-code" viewBox="0 0 15 15">
+        <path
+          d="M10.0625 3.62793L13.125 6.25293L10.0625 8.87793M3.9375 8.87793L0.875 6.25293L3.9375 3.62793M8.3125 2.12793L5.6875 10.3779"
+          stroke="currentColor"
+          fill="transparent"
+          stroke-width="1.3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="ico-info" viewBox="0 0 15 15">
+        <path
+          d="M6.5625 6.82812L6.58642 6.81646C6.66122 6.77909 6.74516 6.76394 6.8283 6.7728C6.91145 6.78166 6.99031 6.81416 7.05556 6.86646C7.1208 6.91875 7.1697 6.98865 7.19645 7.06787C7.2232 7.14709 7.22669 7.23232 7.2065 7.31346L6.7935 8.96779C6.77317 9.04897 6.77655 9.13428 6.80324 9.2136C6.82993 9.29292 6.87881 9.36292 6.94408 9.4153C7.00935 9.46768 7.08828 9.50024 7.1715 9.50911C7.25471 9.51799 7.33873 9.50281 7.41358 9.46537L7.4375 9.45312M12.25 7.26562C12.25 7.95506 12.1142 8.63775 11.8504 9.27471C11.5865 9.91167 11.1998 10.4904 10.7123 10.9779C10.2248 11.4654 9.64605 11.8522 9.00909 12.116C8.37213 12.3798 7.68944 12.5156 7 12.5156C6.31056 12.5156 5.62787 12.3798 4.99091 12.116C4.35395 11.8522 3.7752 11.4654 3.28769 10.9779C2.80018 10.4904 2.41347 9.91167 2.14963 9.27471C1.8858 8.63775 1.75 7.95506 1.75 7.26562C1.75 5.87324 2.30312 4.53788 3.28769 3.55331C4.27226 2.56875 5.60761 2.01562 7 2.01562C8.39239 2.01563 9.72774 2.56875 10.7123 3.55331C11.6969 4.53788 12.25 5.87324 12.25 7.26562ZM7 5.07812H7.00467V5.08279H7V5.07812Z"
+          stroke="currentColor"
+          fill="transparent"
+          stroke-width="1.3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+
+      <symbol id="ico-toc" viewBox="0 0 24 24">
+        <path
+          stroke-width="2"
+          stroke="currentColor"
+          fill="transparent"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+        />
+      </symbol>
+      <symbol id="ico-file" viewBox="0 0 16 16">
+        <path
+          d="M13 9.5V7.75C13 7.15326 12.7629 6.58097 12.341 6.15901C11.919 5.73705 11.3467 5.5 10.75 5.5H9.75C9.55109 5.5 9.36032 5.42098 9.21967 5.28033C9.07902 5.13968 9 4.94891 9 4.75V3.75C9 3.15326 8.76295 2.58097 8.34099 2.15901C7.91903 1.73705 7.34674 1.5 6.75 1.5H5.5M7 1.5H3.75C3.336 1.5 3 1.836 3 2.25V13.75C3 14.164 3.336 14.5 3.75 14.5H12.25C12.664 14.5 13 14.164 13 13.75V7.5C13 5.9087 12.3679 4.38258 11.2426 3.25736C10.1174 2.13214 8.5913 1.5 7 1.5Z"
+          stroke="currentColor"
+          fill="transparent"
+          stroke-width="1.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="ico-folder" viewBox="0 0 16 16">
+        <g clip-path="url(#clip0_529_3809)">
+          <path
+            d="M13 14C13.5304 14 14.0391 13.7893 14.4142 13.4142C14.7893 13.0391 15 12.5304 15 12V9C15 8.46957 14.7893 7.96086 14.4142 7.58579C14.0391 7.21071 13.5304 7 13 7H3C2.46957 7 1.96086 7.21071 1.58579 7.58579C1.21071 7.96086 1 8.46957 1 9V12C1 12.5304 1.21071 13.0391 1.58579 13.4142C1.96086 13.7893 2.46957 14 3 14H13ZM1 6.764V4C1 3.46957 1.21071 2.96086 1.58579 2.58579C1.96086 2.21071 2.46957 2 3 2H6.586C6.98359 2.00017 7.36486 2.15819 7.646 2.43933L9.06067 3.85333C9.154 3.94733 9.28133 4 9.414 4H13C13.5304 4 14.0391 4.21071 14.4142 4.58579C14.7893 4.96086 15 5.46957 15 6V6.764C14.4506 6.27109 13.7381 5.99895 13 6H3C2.26186 5.99895 1.54945 6.27109 1 6.764Z"
+            fill="currentColor"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_529_3809">
+            <rect width="16" height="16" fill="white" />
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol id="ico-ddl" viewBox="0 0 14 15">
+        <path
+          d="M1.75 10.125V11.4375C1.75 11.7856 1.88828 12.1194 2.13442 12.3656C2.38056 12.6117 2.7144 12.75 3.0625 12.75H10.9375C11.2856 12.75 11.6194 12.6117 11.8656 12.3656C12.1117 12.1194 12.25 11.7856 12.25 11.4375V10.125M9.625 7.5L7 10.125M7 10.125L4.375 7.5M7 10.125V2.25"
+          stroke="currentColor"
+          fill="transparent"
+          stroke-width="1.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="ico-copy" viewBox="0 0 14 15">
+        <path
+          d="M8.1875 9.5625V11.5313C8.1875 11.8935 7.8935 12.1875 7.53125 12.1875H1.84375C1.6697 12.1875 1.50278 12.1184 1.37971 11.9953C1.25664 11.8722 1.1875 11.7053 1.1875 11.5313V4.09375C1.1875 3.7315 1.4815 3.4375 1.84375 3.4375H2.9375C3.23067 3.4373 3.52334 3.4615 3.8125 3.50983M8.1875 9.5625H10.1562C10.5185 9.5625 10.8125 9.2685 10.8125 8.90625V6.0625C10.8125 3.46083 8.92075 1.30192 6.4375 0.884835C6.14834 0.836496 5.85567 0.812302 5.5625 0.812501H4.46875C4.1065 0.812501 3.8125 1.1065 3.8125 1.46875V3.50983M8.1875 9.5625H4.46875C4.2947 9.5625 4.12778 9.49336 4.00471 9.37029C3.88164 9.24722 3.8125 9.0803 3.8125 8.90625V3.50983M10.8125 7.375V6.28125C10.8125 5.75911 10.6051 5.25835 10.2359 4.88913C9.86665 4.51992 9.36589 4.3125 8.84375 4.3125H7.96875C7.7947 4.3125 7.62778 4.24336 7.50471 4.12029C7.38164 3.99722 7.3125 3.8303 7.3125 3.65625V2.78125C7.3125 2.52271 7.26158 2.2667 7.16264 2.02784C7.0637 1.78898 6.91868 1.57195 6.73587 1.38913C6.55305 1.20632 6.33602 1.0613 6.09716 0.962363C5.8583 0.863424 5.60229 0.812501 5.34375 0.812501H4.6875"
+          stroke="currentColor"
+          fill="transparent"
+          stroke-width="1.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+    </svg>
+
+    <!-- Realm Navigation -->
+    <header class="main-header sticky top-0 bg-white-50 border-b border-gray-400 text-100 z-max">
+      <nav aria-label="Realm navigation" class="max-w-screen-max mx-auto px-10 grid grid-cols-10 grid-flow-dense gap-8 xxl:gap-20 items-center">
+        <div class="main-navigation flex items-center gap-1 col-span-7 max-w-screen-max h-full py-3">
+          <a class="flex rounded p-2 border border-gray-100 cursor-pointer aspect-square mr-4 h-10 w-10 shrink-0">
+            <svg class="w-6 h-6 text-gray-400">
+              <use href="#ico-apps"></use>
+            </svg>
+          </a>
+          <a class="rounded border border-gray-100 cursor-pointer h-10 w-10 shrink-0">
+            <img src="/src/assets/img/gnoland.svg" alt="Gno username profile pic" width="40px" height="40px" />
+          </a>
+
+          <form class="relative flex items-center bg-gray-100 border h-full border-gray-100 p-1.5 rounded w-full">
+            <input type="text" class="peer absolute w-full top-0 left-0 h-full bg-transparent p-1.5 text-200 focus-within:outline-gray-300 focus-within:outline-2" required />
+
+            <ol class="peer-focus-within:hidden peer-valid:hidden flex text-gray-800 font-semibold relative">
+              <li class=""><a class="hover:underline bg-white-50 inline-block rounded px-1.5 py-0.5" href="#">r</a></li>
+              <li class="before:content-['/'] before:px-1 before:text-gray-300"><a class="hover:underline bg-white-50 inline-block rounded px-1.5 py-0.5" href="#">gnoland</a></li>
+              <li class="before:content-['/'] before:px-1 before:text-gray-300"><a class="hover:underline bg-white-50 inline-block rounded px-1.5 py-0.5" href="#">blog</a></li>
+            </ol>
+
+            <span class="text-gray-300 ml-auto mr-3 peer-valid:hidden">Search in gno.land</span>
+            <button class="peer-valid:ml-auto cursor-pointer p-1 mr-1 z-2 hover:text-green-600">
+              <svg class="w-4 h-4">
+                <use href="#ico-search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <form class="sidemenu col-span-3 flex justify-end gap-4 h-full text-gray-300">
+          <div class="hover:text-gray-600 relative flex items-center h-full mr-auto">
+            <input type="radio" value="summary" name="sidemenu" id="sidemenu-summary" class="peer hidden" checked="true" />
+            <label
+              for="sidemenu-summary"
+              class="inline-flex gap-1 items-center cursor-pointer after:block after:absolute after:rounded-t after:h-1 after:bg-green-600 after:bottom-0 peer-checked:after:w-full peer-checked:text-gray-600 peer-checked:text-stroke"
+            >
+              <svg class="w-5 h-5 xxl:w-4 xxl:h-4 shrink-0 inline-block xl:hidden xxl:inline-block">
+                <use href="#ico-toc"></use>
+              </svg>
+              <span class="hidden xl:inline">Summary</span>
+            </label>
+          </div>
+
+          <div class="hover:text-gray-600 relative flex items-center h-full">
+            <input type="radio" value="summary" name="sidemenu" id="sidemenu-source" class="peer hidden" />
+            <label
+              for="sidemenu-source"
+              class="inline-flex gap-1 items-center cursor-pointer after:block after:absolute after:rounded-t after:h-1 after:bg-green-600 after:bottom-0 peer-checked:after:w-full peer-checked:text-gray-600 peer-checked:text-stroke"
+            >
+              <svg class="w-5 h-5 xxl:w-4 xxl:h-4 shrink-0 inline-block xl:hidden xxl:inline-block">
+                <use href="#ico-code"></use>
+              </svg>
+              <span class="hidden xl:inline">Source</span>
+            </label>
+          </div>
+
+          <div class="hover:text-gray-600 relative flex items-center h-full">
+            <input type="radio" value="summary" name="sidemenu" id="sidemenu-docs" class="peer hidden" />
+            <label
+              for="sidemenu-docs"
+              class="inline-flex gap-1 items-center cursor-pointer after:block after:absolute after:rounded-t after:h-1 after:bg-green-600 after:bottom-0 peer-checked:after:w-full peer-checked:text-gray-600 peer-checked:text-stroke"
+            >
+              <svg class="w-5 h-5 xxl:w-4 xxl:h-4 shrink-0 inline-block xl:hidden xxl:inline-block">
+                <use href="#ico-docs"></use>
+              </svg>
+              <span class="hidden xl:inline">Docs</span>
+            </label>
+          </div>
+
+          <div class="hover:text-gray-600 relative flex items-center h-full">
+            <input type="radio" value="summary" name="sidemenu" id="sidemenu-meta" class="peer hidden" />
+            <label
+              for="sidemenu-meta"
+              class="inline-flex gap-1 items-center cursor-pointer after:block after:absolute after:rounded-t after:h-1 after:bg-green-600 after:bottom-0 peer-checked:after:w-full peer-checked:text-gray-600 peer-checked:text-stroke"
+            >
+              <svg class="w-5 h-5 xxl:w-4 xxl:h-4 shrink-0 inline-block xl:hidden xxl:inline-block">
+                <use href="#ico-info"></use>
+              </svg>
+              <span class="hidden xl:inline">Meta</span>
+            </label>
+          </div>
+
+          <div class="hover:text-gray-600 relative flex items-center h-full">
+            <input type="radio" value="hide" name="sidemenu" id="sidemenu-hide" class="hidden" />
+            <label for="sidemenu-hide" class="inline-flex gap-1 items-center cursor-pointer">
+              <svg class="w-4 h-4 shrink-0">
+                <use href="#ico-cross"></use>
+              </svg>
+            </label>
+          </div>
+        </form>
+      </nav>
+    </header>
+
+    <main class="w-full grow-[2] min-h-full bg-gray-50">
+      <section class="max-w-screen-max mx-auto px-10 grid grid-cols-10 grid-flow-dense gap-8 xxl:gap-20 items-start min-h-full">
+        <aside id="sidebar" class="relative h-full" aria-label="Index">
+          <div class="sticky top-28">
+            <div id="sidebar-summary" class="toc hidden">
+              <span class="text-gray-300 font-semibold">Functions Index</span>
+
+              <nav class="text-100 font-mono">
+                <ul class="list-none space-y-1.5 pt-2">
+                  <li>
+                    <a class="flex items-start gap-2 line-clamp-2 hover:text-green-600" href=""
+                      ><svg class="w-4 h-4 shrink-0 mt-1">
+                        <use href="#ico-code"></use>
+                      </svg>
+                      EditEvent(id string, looooger string)
+                    </a>
+                  </li>
+                  <li>
+                    <a class="flex items-start gap-2 line-clamp-2 hover:text-green-600" href=""
+                      ><svg class="w-4 h-4 shrink-0 mt-1">
+                        <use href="#ico-code"></use>
+                      </svg>
+                      Handle(pattern string, handler Handler)
+                    </a>
+                  </li>
+                  <li>
+                    <a class="flex items-start gap-2 line-clamp-2 hover:text-green-600" href=""
+                      ><svg class="w-4 h-4 shrink-0 mt-1">
+                        <use href="#ico-code"></use>
+                      </svg>
+                      HandleFunc(pattern string, handler func(ResponseWriter, *Request))
+                    </a>
+                  </li>
+                  <li>
+                    <a class="flex items-start gap-2 line-clamp-2 hover:text-green-600" href=""
+                      ><svg class="w-4 h-4 shrink-0 mt-1">
+                        <use href="#ico-code"></use>
+                      </svg>
+                      ListenAndServe(addr string, handler Handler) error
+                    </a>
+                  </li>
+                  <li>
+                    <a class="flex items-start gap-2 line-clamp-2 hover:text-green-600" href=""
+                      ><svg class="w-4 h-4 shrink-0 mt-1">
+                        <use href="#ico-code"></use>
+                      </svg>
+                      ListenAndServeTLS(addr, certFile, keyFile string, handler Handler) error
+                    </a>
+                  </li>
+                  <li>
+                    <a class="flex items-start gap-2 line-clamp-2 hover:text-green-600" href=""
+                      ><svg class="w-4 h-4 shrink-0 mt-1">
+                        <use href="#ico-code"></use>
+                      </svg>
+                      MaxBytesReader(w ResponseWriter, r io.ReadCloser, n int64) io.ReadCloser
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div id="sidebar-source" class="hidden">
+              <h2>Source section</h2>
+              <p>Source content for this section</p>
+            </div>
+            <div id="sidebar-docs" class="hidden">
+              <h2>Docs section</h2>
+              <p>Complete Docs + actions for this section</p>
+            </div>
+            <div id="sidebar-meta" class="hidden">
+              <h2>Metadata section</h2>
+              <p>Here the list of metadata for this section</p>
+            </div>
+          </div>
+        </aside>
+        <section class="code-content mt-10 pb-24 text-gray-900">
+          <div class="flex justify-between mb-3">
+            <div class="flex items-center gap-8">
+              <h1 class="text-600 font-bold">gnoblog.gno</h1>
+            </div>
+            <div class="flex gap-3 text-gray-300">
+              <form class="min-w-48 mx-auto">
+                <select
+                  id="cmdmode"
+                  class="bg-gray-100 text-gray-700 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                >
+                  <option value="fullsecurity">Mode:</span> Full Security</option>
+                  <option value="fast">Mode: Fast</option>
+                </select>
+              </form>
+
+              <div class="relative flex w-full text-100">
+                <label for="EditEvent-id" class="flex gap-3 items-center bg-gray-100 rounded-l-sm px-4 font-bold text-gray-600">Key&nbsp;/&nbsp;Address</label>
+                <input type="text" id="EditEvent-id" class="flex h-full bottom-1 w-full rounded-r-sm p-2 focus:border-gray-600 outline-none font-mono" placeholder="ADDRESS" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Code Content -->
+          <article class="bg-gray-100 rounded p-4 mb-3">
+            <h2 class="text-gray-600 font-bold text-300 mb-3 leading-tight">EditEvent()</h2>
+
+            <div class="mb-1">
+              <div class="flex flex-col gap-3 items-stretch text-gray-400">
+                <h3 class="mr-10 text-50">Params</h3>
+
+                <form class="w-full text-100">
+                  <div class="flex flex-col gap-3 items-stretch text-gray-400 mb-2">
+                    <div class="relative flex w-full">
+                      <label for="EditEvent-id" class="flex gap-3 items-center bg-gray-50 rounded-l-sm px-4 font-bold text-gray-600"> id </label>
+                      <input type="text" id="EditEvent-id" class="flex h-full bottom-1 w-full rounded-r-sm p-2 focus:border-gray-600 outline-none font-mono" placeholder="string" />
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col gap-3 items-stretch text-gray-400 mb-2">
+                    <div class="relative flex w-full">
+                      <label for="EditEvent-id" class="flex gap-3 items-center bg-gray-50 rounded-l-sm px-4 font-bold text-gray-600"> loooooooonger </label>
+                      <input type="text" id="EditEvent-id" class="flex h-full bottom-1 w-full rounded-r-sm p-2 focus:border-gray-600 outline-none font-mono" placeholder="string" />
+                    </div>
+                  </div>
+
+                  <!-- <div class="flex flex-col gap-3 items-stretch text-gray-400 mb-4">
+                    <label for="EditEvent-loooooooonger" class="flex gap-3 leading-tight">
+                      <span class="font-bold text-gray-600">loooooooonger</span>
+                      <span class="font-mono">string</span>
+                    </label>
+                    <div class="w-full">
+                      <input type="text" id="EditEvent-loooooooonger" class="flex h-full border bottom-1 w-full rounded p-2 focus:border-gray-600 outline-none" />
+                    </div>
+                  </div> -->
+                </form>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-gray-400 text-50">Command</h3>
+              <div class="relative rounded-sm text-100 bg-white-50">
+                <button class="w-5 h-5 absolute top-2 right-2 text-gray-400" aria-label="Copy Command">
+                  <svg class="w-5 h-5 top-0">
+                    <use href="#ico-copy"></use>
+                  </svg>
+                </button>
+                <pre
+                  class="font-mono p-4 pr-10 whitespace-pre-wrap"
+                ><code>gnokey maketx call -pkgpath "gno.land/r/gnoland/home" -func "Render" -gas-fee 1000000ugnot -gas-wanted 2000000 -send "" -broadcast -chainid "portal-loop" -args "" -remote "https://rpc.gno.land:443" ADDRESS</code></pre>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-gray-100 rounded p-4 mb-3">
+            <h2 class="text-gray-600 font-bold text-300 mb-3 leading-tight">EditEvent()</h2>
+
+            <div class="mb-1">
+              <div class="flex flex-col gap-3 items-stretch text-gray-400">
+                <h3 class="mr-10 text-50">Params</h3>
+
+                <form class="w-full text-100">
+                  <div class="flex flex-col gap-3 items-stretch text-gray-400 mb-2">
+                    <div class="relative flex w-full">
+                      <label for="EditEvent-id" class="flex gap-3 items-center bg-gray-50 rounded-l-sm px-4 font-bold text-gray-600"> id </label>
+                      <input type="text" id="EditEvent-id" class="flex h-full bottom-1 w-full rounded-r-sm p-2 focus:border-gray-600 outline-none font-mono" placeholder="string" />
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col gap-3 items-stretch text-gray-400 mb-2">
+                    <div class="relative flex w-full">
+                      <label for="EditEvent-id" class="flex gap-3 items-center bg-gray-50 rounded-l-sm px-4 font-bold text-gray-600"> loooooooonger </label>
+                      <input type="text" id="EditEvent-id" class="flex h-full bottom-1 w-full rounded-r-sm p-2 focus:border-gray-600 outline-none font-mono" placeholder="string" />
+                    </div>
+                  </div>
+
+                  <!-- <div class="flex flex-col gap-3 items-stretch text-gray-400 mb-4">
+                    <label for="EditEvent-loooooooonger" class="flex gap-3 leading-tight">
+                      <span class="font-bold text-gray-600">loooooooonger</span>
+                      <span class="font-mono">string</span>
+                    </label>
+                    <div class="w-full">
+                      <input type="text" id="EditEvent-loooooooonger" class="flex h-full border bottom-1 w-full rounded p-2 focus:border-gray-600 outline-none" />
+                    </div>
+                  </div> -->
+                </form>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-gray-400 text-50">Command</h3>
+              <div class="relative rounded-sm text-100 bg-white-50">
+                <button class="w-5 h-5 absolute top-2 right-2 text-gray-400" aria-label="Copy Command">
+                  <svg class="w-5 h-5 top-0">
+                    <use href="#ico-copy"></use>
+                  </svg>
+                </button>
+                <pre
+                  class="font-mono p-4 pr-10 whitespace-pre-wrap"
+                ><code>gnokey maketx call -pkgpath "gno.land/r/gnoland/home" -func "Render" -gas-fee 1000000ugnot -gas-wanted 2000000 -send "" -broadcast -chainid "portal-loop" -args "" -remote "https://rpc.gno.land:443" ADDRESS</code></pre>
+              </div>
+            </div>
+          </article>
+          <article class="bg-gray-100 rounded p-4 mb-3">
+            <h2 class="text-gray-600 font-bold text-300 mb-3 leading-tight">EditEvent()</h2>
+
+            <div class="mb-1">
+              <div class="flex flex-col gap-3 items-stretch text-gray-400">
+                <h3 class="mr-10 text-50">Params</h3>
+
+                <form class="w-full text-100">
+                  <div class="flex flex-col gap-3 items-stretch text-gray-400 mb-2">
+                    <div class="relative flex w-full">
+                      <label for="EditEvent-id" class="flex gap-3 items-center bg-gray-50 rounded-l-sm px-4 font-bold text-gray-600"> id </label>
+                      <input type="text" id="EditEvent-id" class="flex h-full bottom-1 w-full rounded-r-sm p-2 focus:border-gray-600 outline-none font-mono" placeholder="string" />
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col gap-3 items-stretch text-gray-400 mb-2">
+                    <div class="relative flex w-full">
+                      <label for="EditEvent-id" class="flex gap-3 items-center bg-gray-50 rounded-l-sm px-4 font-bold text-gray-600"> loooooooonger </label>
+                      <input type="text" id="EditEvent-id" class="flex h-full bottom-1 w-full rounded-r-sm p-2 focus:border-gray-600 outline-none font-mono" placeholder="string" />
+                    </div>
+                  </div>
+
+                  <!-- <div class="flex flex-col gap-3 items-stretch text-gray-400 mb-4">
+                    <label for="EditEvent-loooooooonger" class="flex gap-3 leading-tight">
+                      <span class="font-bold text-gray-600">loooooooonger</span>
+                      <span class="font-mono">string</span>
+                    </label>
+                    <div class="w-full">
+                      <input type="text" id="EditEvent-loooooooonger" class="flex h-full border bottom-1 w-full rounded p-2 focus:border-gray-600 outline-none" />
+                    </div>
+                  </div> -->
+                </form>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-gray-400 text-50">Command</h3>
+              <div class="relative rounded-sm text-100 bg-white-50">
+                <button class="w-5 h-5 absolute top-2 right-2 text-gray-400" aria-label="Copy Command">
+                  <svg class="w-5 h-5 top-0">
+                    <use href="#ico-copy"></use>
+                  </svg>
+                </button>
+                <pre
+                  class="font-mono p-4 pr-10 whitespace-pre-wrap"
+                ><code>gnokey maketx call -pkgpath "gno.land/r/gnoland/home" -func "Render" -gas-fee 1000000ugnot -gas-wanted 2000000 -send "" -broadcast -chainid "portal-loop" -args "" -remote "https://rpc.gno.land:443" ADDRESS</code></pre>
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <footer class="w-full text-100 py-1.5 border-t border-gray-300">
+      <nav class="max-w-screen-max mx-auto px-10 grid grid-cols-4 justify-between items-center gap-2 xl:gap-20">
+        <!-- Footer Navigation -->
+        <div class="col-span-1">
+          <a class="block h-4" href=""
+            ><svg viewBox="0 0 116 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_210_682)">
+                <path
+                  d="M15.7782 18.1953C15.5729 17.4557 15.1344 16.8048 14.5394 16.3075C14.3097 16.1152 14.0591 15.9332 13.7854 15.7636C13.5534 15.6191 13.261 15.8319 13.3283 16.0936L13.493 16.7331C13.7018 17.5456 12.8133 18.2044 12.0732 17.7868L10.0838 16.6648C8.77648 15.9275 7.16872 15.9275 5.8614 16.6648L3.872 17.7868C3.13192 18.2044 2.24336 17.5444 2.45216 16.7331L2.62152 16.0754C2.6888 15.8148 2.39764 15.602 2.16564 15.7454C1.86172 15.932 1.58564 16.1346 1.33508 16.3474C0.749278 16.8458 0.342118 17.5149 0.151878 18.2522L0.144918 18.2795C-0.338802 20.1639 0.412879 22.145 2.03456 23.2612L7.05736 26.717C7.6072 27.0948 8.33916 27.0948 8.889 26.717L13.9118 23.2612C15.5578 22.129 16.3072 20.1047 15.7782 18.1965V18.1953Z"
+                  fill="#999999"
+                />
+                <path
+                  d="M15.5711 14.0394C15.1326 10.4459 13.3358 6.84558 11.5981 4.08732L14.1803 1.55437C14.7649 0.980866 14.3508 0 13.5237 0H7.96265C7.53345 0 7.10309 0.185477 6.81309 0.555293C4.85501 3.05525 1.02121 8.55584 0.351893 14.0394C0.291573 14.5389 0.888973 14.845 1.27177 14.5105C2.60809 13.343 4.69261 12.5078 7.96149 12.5078C11.2304 12.5078 13.3137 13.3441 14.6512 14.5105C15.034 14.845 15.6314 14.5378 15.5711 14.0394Z"
+                  fill="#226C57"
+                />
+                <path
+                  d="M22.1331 22.9892L23.7188 20.5064C24.8034 21.6522 26.2499 22.1153 27.918 22.1153C29.5861 22.1153 31.6451 21.4064 31.6451 18.7324V17.45C30.5883 18.7597 29.1418 19.4959 27.4737 19.4959C24.1364 19.4959 21.5508 17.2042 21.5508 12.8119C21.5508 8.41962 24.0819 6.10059 27.4737 6.10059C29.0873 6.10059 30.5605 6.75488 31.6451 8.11921V6.4283H35.1773V18.7312C35.1773 23.7232 31.2287 24.951 27.9192 24.951C25.6386 24.951 23.8313 24.4332 22.1343 22.987V22.9892H22.1331ZM31.6439 14.9409V10.6579C31.0315 9.8124 29.7531 9.18428 28.6129 9.18428C26.5829 9.18428 25.192 10.5486 25.192 12.813C25.192 15.0774 26.5829 16.4418 28.6129 16.4418C29.7531 16.4418 31.0326 15.7875 31.6439 14.9409Z"
+                  fill="black"
+                />
+                <path
+                  d="M46.09 19.6061V11.6408C46.09 9.81338 45.1168 9.18526 43.6146 9.18526C42.2237 9.18526 41.167 9.94879 40.5556 10.7135V19.6073H37.0234V6.42928H40.5556V8.12019C41.4175 7.13819 43.0868 6.10156 45.256 6.10156C48.2314 6.10156 49.65 7.73786 49.65 10.3027V19.605H46.09V19.6061Z"
+                  fill="black"
+                />
+                <path
+                  d="M50.8945 13.0039C50.8945 9.26703 53.5637 6.10254 57.9856 6.10254C62.4075 6.10254 65.1045 9.26703 65.1045 13.0039C65.1045 16.7407 62.4354 19.9325 57.9856 19.9325C53.5359 19.9325 50.8945 16.7407 50.8945 13.0039ZM61.4343 13.0039C61.4343 10.9579 60.2105 9.1851 57.9856 9.1851C55.7607 9.1851 54.5648 10.9579 54.5648 13.0039C54.5648 15.0498 55.7886 16.85 57.9856 16.85C60.1827 16.85 61.4343 15.0771 61.4343 13.0039Z"
+                  fill="black"
+                />
+                <path
+                  d="M65.5859 18.3778C65.5859 17.5597 66.2808 16.877 67.116 16.877C67.9512 16.877 68.646 17.5586 68.646 18.3778C68.646 19.1971 67.9512 19.8787 67.116 19.8787C66.2808 19.8787 65.5859 19.1971 65.5859 18.3778Z"
+                  fill="black"
+                />
+                <path
+                  d="M70.2188 16.8503V1.41016H72.3044V16.4145C72.3044 17.3965 72.7499 18.1054 73.6674 18.1054C74.2509 18.1054 74.8077 17.8323 75.0583 17.533L75.6974 19.0885C75.1418 19.5789 74.418 19.934 73.1942 19.934C71.2198 19.934 70.2188 18.8154 70.2188 16.8514V16.8503Z"
+                  fill="black"
+                />
+                <path
+                  d="M86.4924 19.6058V17.6418C85.4913 18.9788 83.8511 19.9335 81.9591 19.9335C78.4548 19.9335 75.9805 17.3152 75.9805 13.0322C75.9805 8.74912 78.4559 6.10352 81.9591 6.10352C83.7664 6.10352 85.4078 6.97628 86.4924 8.42255V6.43123H88.5781V19.6069H86.4924V19.6058ZM86.4924 16.0043V10.0577C85.7697 8.91184 84.1283 7.92984 82.4881 7.92984C79.7632 7.92984 78.1497 10.1123 78.1497 13.031C78.1497 15.9497 79.7632 18.1049 82.4881 18.1049C84.1283 18.1049 85.7697 17.1502 86.4924 16.0043Z"
+                  fill="black"
+                />
+                <path
+                  d="M99.8706 19.6061V10.9854C99.8706 8.63907 98.6468 7.93016 96.8395 7.93016C95.1993 7.93016 93.6692 8.91217 92.863 9.9761V19.6061H90.7773V6.42928H92.863V8.33867C93.8084 7.22011 95.6435 6.10156 97.6735 6.10156C100.454 6.10156 101.928 7.49321 101.928 10.3573V19.605H99.8706V19.6061Z"
+                  fill="black"
+                />
+                <path
+                  d="M113.914 19.6063V17.6422C112.913 18.9793 111.273 19.934 109.381 19.934C105.877 19.934 103.402 17.3157 103.402 13.0326C103.402 8.74959 105.878 6.10398 109.381 6.10398C111.188 6.10398 112.83 6.97674 113.914 8.42301V1.41016H116V19.6063H113.914ZM113.914 16.0048V10.0582C113.192 8.91231 111.55 7.9303 109.91 7.9303C107.185 7.9303 105.572 10.1128 105.572 13.0315C105.572 15.9502 107.185 18.1054 109.91 18.1054C111.55 18.1054 113.192 17.1507 113.914 16.0048Z"
+                  fill="black"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_210_682">
+                  <rect width="116" height="27" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+        <div class="flex justify-between col-span-3">
+          <ul aria-label="Footer navigation" class="flex flex-col xl:flex-row gap-6">
+            <li><a href="">About</a></li>
+            <li><a href="">Docs</a></li>
+            <li><a href="">Faucet</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Status</a></li>
+          </ul>
+          <ul aria-label="Social media" class="flex flex-col xl:flex-row gap-6">
+            <li><a href="">Github</a></li>
+            <li><a href="">X</a></li>
+            <li><a href="">Discord</a></li>
+            <li><a href="">YouTube</a></li>
+          </ul>
+          <ul aria-label="Legal" class="flex flex-col xl:flex-row gap-6">
+            <li><a href="">Terms</a></li>
+            <li><a href="">Privacy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

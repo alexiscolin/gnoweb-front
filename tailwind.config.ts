@@ -16,6 +16,7 @@ export default <Config>{
       max: `${pxToRem(1580)}rem`,
     },
     borderRadius: {
+      sm: `${pxToRem(4)}rem`,
       DEFAULT: `${pxToRem(6)}rem`,
     },
     zIndex: {
